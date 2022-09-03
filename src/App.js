@@ -5,9 +5,11 @@ import TrackAppointment from './components/trackYourAppointment/trackYourAppoint
 
 function App() {
   return (
-    // <DirectPageTestimonials/>
+    <>
     <TrackAppointment/>
-  );
+    <DirectPageTestimonials/>
+    </>
+    );
 }
 
 export default App;
