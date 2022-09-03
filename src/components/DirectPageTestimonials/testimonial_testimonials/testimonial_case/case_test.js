@@ -19,7 +19,7 @@ function case_test({ name, casen, details, alter }) {
             <div className={testimonialCaseClass}>
                 <div className='caseDets'>
                     <div className='testimonialIdentity'>
-                        <h6 className='testimonialCase'>Case {casen}</h6>
+                        
                         <img className='testimonialRect' src={cardrectangle} alt='card' />
                         <h5 className='testimonialPatientName'>{name}</h5>
                     </div>
