@@ -1,0 +1,20 @@
+.fstar{
+    margin-left: 5px;
+    list-style: none;
+
+}
+.StarCon {
+    display:flex;
+    margin: 2%;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: 25px;
+    margin-right:3%;
+    padding: 0px;
+}
+
+.star{
+    width: 20px;
+    height: 20px;
+}

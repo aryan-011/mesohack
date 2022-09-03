@@ -1,0 +1,39 @@
+.readMoreDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3%;
+    margin-top: -5%;
+    
+}
+.arrowDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67px;
+    height: 67px;
+    background-color: #07A0E1;
+    border-radius: 100px;
+    
+}
+.testimonialCaseCont{
+    height: fit-content;
+}
+.More{
+    height: 38px;
+    width: 38px;
+}
+.readMore{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+}
+
+.Less{
+    height: 38px;
+    width: 38px;
+    transform: rotate(180deg);
+}
+

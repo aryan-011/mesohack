@@ -1,0 +1,69 @@
+.AppointmentHeader
+{
+    border-radius: 10px;
+    border-color: black;
+    background-color: aliceblue;
+    margin: 20px
+    
+    ;
+}
+
+
+
+.AppointmentDetails
+{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.AppointmentDetailsLeft
+{
+    width: 40%;
+    margin: 3.5%;
+    top: 0%;
+}
+.AppointmentDetailsRight{
+    width: 60%;
+    margin: 3.5%;
+    top: 0%;
+}
+
+.patientImg{
+    align-items: right;
+}
+.ADets{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+.PDets{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 4%;
+}
+.PatientImg{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 0px;
+    margin-top: 3%;
+
+}
+.PatientImgWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+        justify-content: center;
+}
+.PatientD{
+    margin: auto;
+    margin-left: 5px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+p{
+    font-size: large;
+}

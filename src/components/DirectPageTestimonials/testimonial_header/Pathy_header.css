@@ -1,0 +1,63 @@
+.header {
+    height: fit-content;
+    width: 100%;
+    background-color: #D1FAFF87;
+    background-image: url(./images/background_image_eclipse1.png), url(./images/background_image_eclipse2.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 58% 150%,20% 35%;
+}
+@media (max-width: 500px){
+    .header{
+        background-position: left bottom, right top;
+        background-size: 58% 80%,50% 50%;
+    }
+}
+.pathy_header_intro {
+    text-align: center;
+    padding-bottom: 50px;
+    height: fit-content;
+
+}
+.pathy_header_intro h1{
+    /* margin-bottom: 25px; */
+    margin-bottom: 45px;
+}
+.pathy_header_intro .box{
+    display: flex;
+    width: 90%;
+    height: 98vh;
+    margin: auto;
+    padding: 3% 5%;
+    /* margin-top: 5%; */
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0.479);
+    box-shadow: 0px 0px 8px rgba(136, 136, 136, 0.642); */
+    /* margin-bottom: 50px; */
+}
+
+.pathy_header_intro .box .left{
+    width: 50%; 
+    margin: auto;
+    font-size: 1.1em;
+}
+.pathy_header_intro .box img{
+    width: 35%;
+    height: auto;
+    margin: auto;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .pathy_header_intro .box .left{
+        font-size: 1em;
+    }
+}
+@media (max-width: 767px){
+    .pathy_header_intro .box .left{
+        width: 100%; 
+        font-size: 1em;
+    }
+    .pathy_header_intro .box img{
+        display: none;
+    }
+}
