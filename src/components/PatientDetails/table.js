@@ -1,53 +1,37 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import { MDBBadge, MDBBtn, MDBTable, MDBTableHead, MDBTableBody } from 'mdb-react-ui-kit';
 import './table.css'
+import { Button } from 'bootstrap';
+import { Data } from './data';
+import Status from './status';
+import PatientEntity from './patientEntity';
 export default function Table() {
+
+
   return (
 
     <div className='table'>
-    <MDBTable align='middle'>
-      <MDBTableHead>
-        <tr>
-          <th scope='col'>PatientID</th>
-          <th scope='col'>Title</th>
-          <th scope='col'>Status</th>
-          <th scope='col'>Position</th>
-          <th scope='col'>Actions</th>
-        </tr>
-      </MDBTableHead>
-      <MDBTableBody>
-        <tr>
-          <td>
-            <div className='d-flex align-items-center'>
-              <img
-                src='https://mdbootstrap.com/img/new/avatars/8.jpg'
-                alt=''
-                style={{ width: '45px', height: '45px' }}
-                className='rounded-circle'
-              />
-              <div className='ms-3'>
-                <p className='fw-bold mb-1'>John Doe</p>
-                <p className='text-muted mb-0'>john.doe@gmail.com</p>
-              </div>
-            </div>
-          </td>
-          <td>
-            <p className='fw-normal mb-1'>Software engineer</p>
-            <p className='text-muted mb-0'>IT department</p>
-          </td>
-          <td>
-            <MDBBadge color='success' pill>
-              Active
-            </MDBBadge>
-          </td>
-          <td>Senior</td>
-          <td>
-            <MDBBtn color='link' rounded size='sm'>
-              Edit
-            </MDBBtn>
-          </td>
-        </tr>
-        <tr>
+      <MDBTable align='middle'>
+        <MDBTableHead>
+          <tr>
+            <th scope='col'>PatientID</th>
+            <th scope='col'>Issues</th>
+            <th scope='col'>Status</th>
+            <th scope='col'>Phone Number</th>
+            <th scope='col'>Actions</th>
+          </tr>
+        </MDBTableHead>
+        <MDBTableBody>
+
+          {Data.map((item, index) => {
+            console.log(item)
+            return (
+              <>
+                <PatientEntity {...item}/>
+              </>
+            );
+          })}
+          {/* <tr>
           <td>
             <div className='d-flex align-items-center'>
               <img
@@ -73,12 +57,12 @@ export default function Table() {
           </td>
           <td>Junior</td>
           <td>
-            <MDBBtn color='link' rounded size='sm'>
+            <button color='link' rounded size='sm'>
               Edit
-            </MDBBtn>
+            </button>
           </td>
-        </tr>
-        <tr>
+        </tr> */}
+          {/* <tr>
           <td>
             <div className='d-flex align-items-center'>
               <img
@@ -104,13 +88,13 @@ export default function Table() {
           </td>
           <td>Senior</td>
           <td>
-            <MDBBtn color='link' rounded size='sm'>
+            <button color='link' rounded size='sm'>
               Edit
-            </MDBBtn>
+            </button>
           </td>
-        </tr>
-      </MDBTableBody>
-    </MDBTable>
+        </tr> */}
+        </MDBTableBody>
+      </MDBTable>
     </div>
   );
 }

@@ -1,0 +1,11 @@
+body{
+    box-sizing: border-box;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+}
+.mb-4 {
+    margin-bottom: 1.5rem!important;
+    margin-left: 5px;
+}
