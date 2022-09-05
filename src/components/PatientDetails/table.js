@@ -5,11 +5,13 @@ import { Button } from 'bootstrap';
 import { Data } from './data';
 import Status from './status';
 import PatientEntity from './patientEntity';
+import Navbar from '../DirectPageTestimonials/testimonial_navbar/Navbar'
 export default function Table() {
 
 
   return (
-
+    <>
+    <Navbar/>
     <div className='table'>
       <MDBTable align='middle'>
         <MDBTableHead>
@@ -96,5 +98,6 @@ export default function Table() {
         </MDBTableBody>
       </MDBTable>
     </div>
+    </>
   );
 }

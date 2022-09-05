@@ -12,8 +12,9 @@ import {
     MDBInput,
     MDBCheckbox
 }
-    from 'mdb-react-ui-kit';
-    import {useNavigate} from 'react-router-dom';
+from 'mdb-react-ui-kit';
+import {useNavigate} from 'react-router-dom';
+import Navbar from '../DirectPageTestimonials/testimonial_navbar/Navbar'
 import './loginPage.css';
 import ProfilePage from '../userProfile/profile';
 import { Route } from 'react-router-dom';
@@ -55,7 +56,7 @@ function LoginPage() {
 
     const handlePatientLogin = () => {
         if(email===patientEmail && password===patientPassword){
-            navigate('/')
+            navigate('/patient-profile')
 
         }
         else{
@@ -65,6 +66,8 @@ function LoginPage() {
     
 
     return (
+        <>
+        <Navbar/>
         <MDBContainer className="p-3 my-5 d-flex flex-column w-50">
 
             <MDBTabs pills justify className='mb-3 d-flex flex-row justify-content-between'>
@@ -126,6 +129,7 @@ function LoginPage() {
             </MDBTabsContent>
 
         </MDBContainer>
+    </>
     );
 }
 

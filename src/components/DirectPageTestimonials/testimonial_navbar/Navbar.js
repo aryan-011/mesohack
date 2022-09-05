@@ -3,6 +3,7 @@ import React from "react";
 import logo from "./images/logo.png";
 import "./Navbar.css";
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { Link,NavLink } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -18,7 +19,7 @@ function Navbar() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a className="nav-a dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Services
                 </a>
@@ -42,29 +43,34 @@ function Navbar() {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" to="/pathy">
-                  Homeopathy
-                </a>
+                <NavLink className="nav-link " aria-current="page" to="/track-appointments">
+                  Track Appointments
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" to='/patient-details'>
                   Patients
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Pricing
-                </a>
+                <NavLink className="nav-link" to='/patient-profile'>
+                Patient Profile
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Support
-                </a>
+                <NavLink className="nav-link" to='/doctor-list'>
+                  Doctors
+                </NavLink>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
+                <NavLink className="nav-link" to='/appointment'>
+                  Book An Appointment
+                </NavLink>
+              </li>
+              {/* <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Diseases
                 </a>
@@ -88,16 +94,16 @@ function Navbar() {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
             <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <div className="animated-button">
+                <NavLink className="animated-button" to='/login-page'>
                   <button type="button" className="button">
                     Get Started
                   </button>
                   <div className="background"></div>
-                </div>
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -16,9 +16,11 @@ import {
   MDBListGroup,
   MDBListGroupItem
 } from 'mdb-react-ui-kit';
-
+import Navbar from '../DirectPageTestimonials/testimonial_navbar/Navbar'
 export default function ProfilePage() {
   return (
+    <>
+    <Navbar/>
     <section style={{ backgroundColor: '#eee' }}>
       <MDBContainer className="py-5">
         <MDBRow>
@@ -200,5 +202,6 @@ export default function ProfilePage() {
         </MDBRow>
       </MDBContainer>
     </section>
+    </>
   );
 }

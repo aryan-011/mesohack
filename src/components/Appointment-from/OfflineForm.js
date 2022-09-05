@@ -1,10 +1,13 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import './AppointmentForm.css';
-
+import Navbar from '../DirectPageTestimonials/testimonial_navbar/Navbar';
 const OfflineForm = (props) => {
     const navigate=useNavigate();
   return (
+  <>
+  
+  <Navbar/>
 <div className="container mt-5 mb-5 d-flex justify-content-center">
 
   <div className="card px-1 py-4">
@@ -55,7 +58,7 @@ const OfflineForm = (props) => {
                 className="form-control"
                 type="text"
                 placeholder="Mobile"
-              />{" "}
+                />{" "}
             </div>
           </div>
         </div>
@@ -69,7 +72,7 @@ const OfflineForm = (props) => {
                 className="form-control"
                 type="text"
                 placeholder="Email ID"
-              />{" "}
+                />{" "}
             </div>
           </div>
         </div>
@@ -105,6 +108,7 @@ const OfflineForm = (props) => {
   </div>
 </div>
 
+                </>
   )
 }
 
